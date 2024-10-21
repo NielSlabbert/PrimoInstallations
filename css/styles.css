@@ -1,0 +1,454 @@
+/* Theme Variables */
+:root {
+    --bg-color-dark: #121212;
+    --text-color-dark: #f8f8f8;
+    --accent-color-dark: #d00000;
+    --secondary-bg-dark: #2a2a2a;
+    --border-color-dark: #4a4a4a;
+    --placeholder-color-dark: #b3b3b3; /* Added for placeholder visibility in dark mode */
+
+    --bg-color-light: #ffffff;
+    --text-color-light: #333333;
+    --accent-color-light: #007bff;
+    --secondary-bg-light: #f0f0f0;
+    --border-color-light: #ddd;
+    --placeholder-color-light: #757575; /* Added for placeholder visibility in light mode */
+
+    --hover-color-dark: #ff4a4a;
+    --hover-color-light: #0056b3;
+}
+
+/* Default Styles */
+body {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+/* Button Styles */
+.btn-primary, .btn-light {
+    background-color: var(--accent-color-dark);
+    color: var(--text-color-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .btn-primary, body.light-mode .btn-light {
+    background-color: var(--accent-color-light);
+    color: var(--text-color-light);
+}
+
+/* Button Hover States */
+.btn-primary:hover, .btn-light:hover {
+    background-color: var(--hover-color-dark);
+}
+
+body.light-mode .btn-primary:hover, body.light-mode .btn-light:hover {
+    background-color: var(--hover-color-light);
+}
+
+/* Scale Hover Effects */
+.btn:hover, .social-icon:hover {
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 300px;
+    }
+}
+
+/* Feature Section */
+#features, body.light-mode #features {
+    background-color: var(--secondary-bg-dark);
+}
+
+body.light-mode #features {
+    background-color: var(--secondary-bg-light);
+}
+
+/* Icon Styles */
+.icon {
+    color: var(--accent-color-dark);
+    transition: color 0.3s ease;
+}
+
+body.light-mode .icon {
+    color: var(--accent-color-light);
+}
+
+.icon:hover, body.light-mode .icon:hover {
+    color: var(--hover-color-dark);
+}
+
+body.light-mode .icon:hover {
+    color: var(--hover-color-light);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--secondary-bg-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--border-color-dark);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode .card {
+    background-color: var(--secondary-bg-light);
+    color: var(--text-color-light);
+    border: 1px solid var(--border-color-light);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: var(--secondary-bg-dark) !important;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode #testimonials {
+    background-color: var(--secondary-bg-light) !important;
+}
+
+/* Moray Artist Biography */
+.biography, #biography, .biographytext, #biographytext, .artiststatement, #artiststatement {
+    background-color: var(--secondary-bg-dark);
+    color: var(--text-color-dark);
+}
+
+body.light-mode .biography, body.light-mode #biography, 
+body.light-mode .biographytext, body.light-mode #biographytext, 
+body.light-mode .artiststatement, body.light-mode #artiststatement {
+    background-color: var(--secondary-bg-light);
+    color: var(--text-color-light);
+}
+
+/* Social Media Icons */
+.social-icon {
+    color: var(--accent-color-dark);
+    transition: color 0.3s ease;
+}
+
+body.light-mode .social-icon {
+    color: var(--accent-color-light);
+}
+
+.social-icon:hover, body.light-mode .social-icon:hover {
+    color: var(--hover-color-dark);
+}
+
+body.light-mode .social-icon:hover {
+    color: var(--hover-color-light);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* Image Styles */
+img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+body.light-mode img {
+    opacity: 1;
+}
+
+body:not(.light-mode) img {
+    opacity: 0.85;
+}
+
+/* Image Scroller and Carousel */
+#image-scroller, body.light-mode #image-scroller {
+    background-color: var(--secondary-bg-dark);
+}
+
+body.light-mode #image-scroller {
+    background-color: var(--secondary-bg-light);
+}
+
+/* Contact Form */
+.contact-form input[type="text"], .contact-form input[type="tel"], 
+.contact-form input[type="email"], .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color-dark);
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+body.light-mode .contact-form input[type="text"], body.light-mode .contact-form input[type="tel"], 
+body.light-mode .contact-form input[type="email"], body.light-mode .contact-form textarea {
+    border: 1px solid var(--border-color-light);
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+/* Placeholder Text Color */
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: var(--placeholder-color-dark); /* Visible placeholder for dark mode */
+    opacity: 1; /* Full opacity for better visibility */
+}
+
+body.light-mode .contact-form input::placeholder, 
+body.light-mode .contact-form textarea::placeholder {
+    color: var(--placeholder-color-light); /* Visible placeholder for light mode */
+    opacity: 1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--accent-color-dark);
+    outline: none;
+}
+
+body.light-mode .contact-form input:focus, body.light-mode .contact-form textarea:focus {
+    border-color: var(--accent-color-light);
+}
+
+/* Styling (Dark & Light Mode) */
+.navbar, .offcanvas, .footer, .cta, .card, .feature-box, #testimonialCarousel, 
+.carousel-control-prev, .carousel-control-next, input, textarea, select {
+    background-color: var(--secondary-bg-dark);
+    color: var(--text-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode .navbar, body.light-mode .offcanvas, 
+body.light-mode .footer, body.light-mode .cta, 
+body.light-mode .card, body.light-mode .feature-box, 
+body.light-mode #testimonialCarousel, 
+body.light-mode .carousel-control-prev, body.light-mode .carousel-control-next, 
+body.light-mode input, body.light-mode textarea, body.light-mode select {
+    background-color: var(--secondary-bg-light);
+    color: var(--text-color-light);
+}
+
+
+
+/* Navbar links color for dark mode */
+.navbar .nav-link {
+    color: var(--text-color-dark);
+    transition: color 0.3s;
+}
+
+/* Ensure Home tab also inherits the same color change */
+.navbar .nav-link.active, .navbar .nav-link#home-link {
+    color: var(--text-color-dark);
+}
+
+/* Light mode styling */
+body.light-mode .navbar, body.light-mode .offcanvas, body.light-mode .footer, 
+body.light-mode .cta, body.light-mode .card, body.light-mode .feature-box, 
+body.light-mode #testimonialCarousel, body.light-mode .carousel-control-prev, 
+body.light-mode .carousel-control-next, body.light-mode input, 
+body.light-mode textarea, body.light-mode select {
+    background-color: var(--secondary-bg-light);
+    color: var(--text-color-light);
+}
+
+/* Navbar links color for light mode */
+body.light-mode .navbar .nav-link {
+    color: var(--text-color-light);
+}
+
+/* Ensure Home tab changes color in light mode as well */
+body.light-mode .navbar .nav-link.active, body.light-mode .navbar .nav-link#home-link {
+    color: var(--text-color-light);
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: var(--secondary-bg-dark);
+    }
+
+    body.light-mode .navbar {
+        background-color: var(--secondary-bg-light);
+    }
+
+    /* Ensure nav-link colors are correct for mobile as well */
+    .navbar-nav .nav-link {
+        color: var(--text-color-dark) !important;
+    }
+
+    body.light-mode .navbar-nav .nav-link {
+        color: var(--text-color-light) !important;
+    }
+
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+
+
+/* Scroll-to-Top Button */
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: var(--accent-color-dark);
+    color: var(--text-color-dark);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode #scroll-to-top {
+    background-color: var(--accent-color-light);
+    color: var(--text-color-light);
+}
+
+#scroll-to-top:hover {
+    background-color: var(--hover-color-dark);
+}
+
+body.light-mode #scroll-to-top:hover {
+    background-color: var(--hover-color-light);
+}
+
+/* Parallax Background */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Animation and Theme Toggles */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body:not(.light-mode) {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Ensure Footer Stays at the Bottom */
+footer {
+    margin-top: auto;
+}
+
+/* Pop Up Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* On top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark backdrop */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: transparent; /* No background for the content */
+    border: none; /* No border */
+    max-width: 90%; /* Limit max width */
+    max-height: 90%; /* Limit max height */
+    display: flex; /* Ensure content inside is flexible */
+    justify-content: center; /* Center image */
+    align-items: center; /* Center image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Image inside the modal */
+.modal-content img {
+    max-width: 100%; /* Ensure image fits horizontally */
+    max-height: 100%; /* Ensure image fits vertically */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Button styling */
+.modal-button {
+    cursor: pointer;
+}
+
+
+/* Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Images in the Modal */
+.modal-images {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.modal-images img {
+    width: 300px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+
+/* Ensure .modal is clickable by setting a higher z-index */
+.modal, .modal-content, .close {
+    z-index: 10000; /* Higher than the background overlay */
+}
+
+/* Ensure that the modal content can capture clicks */
+.modal-content {
+    pointer-events: auto; /* Allow all pointer events */
+}
+
+/* If there's an overlay, ensure it doesn't capture clicks */
+.modal {
+    pointer-events: auto; /* Prevent modal background from capturing clicks */
+}
+
+.modal > .modal-content {
+    pointer-events: auto; /* But allow the content to be clickable */
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Primo Installations</title>
+    <meta name="description" content="Primo Installations: Your go-to for professional installation services across residential and commercial projects.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6735e83b36.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom Web Icon -->
+    <link rel="icon" href="images/favicon16x16.png">
+
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <section id="title">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo -->
+                    <img src="images/PrimoInstallations0.png">
+                </a>
+                    <button id="theme-toggle" class="btn btn-outline-dark">Toggle Theme</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                <!-- COLLAPSE NAVBAR -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <!-- Logo -->
+                                <img src="images/PrimoInstallations0.png">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                
+                    <!-- OFFCANVAS BODY-->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 350px;">
+
+                            <!-- HOME TAB -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <!-- Services TAB -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+
+                            <!-- Services TAB -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+
+                            <!-- Testimonials TAB -->   
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonials.html">Testimonials</a>
+                            </li>
+
+                            <!-- Social Media line -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Social Media
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                    <li><a class="dropdown-item" href="https://">Facebook</a></li>
+                                    <li><a class="dropdown-item" href="https://">X (Twitter)</a></li>
+                                    <li><a class="dropdown-item" href="https://">TikTok</a></li>
+                                    <li><a class="dropdown-item" href="https://">Youtube</a></li>
+                                    <li><a class="dropdown-item" href="https://">LinkedIn</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Contact Us TAB -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                        <!-- SEARCH BAR -->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Projects Hero Section -->
+    <section id="projects-hero" class="text-center py-5 bg-primary text-white">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Explore our portfolio of completed installations across various industries.</p>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section id="projects-showcase" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- First Project -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/Site1.jpeg" class="card-img-top" alt="Commercial Office Fit-Out">
+                        <div class="card-body">
+                            <h5 class="card-title">Commercial Office Fit-Out</h5>
+                            <p class="card-text">Complete overhaul of office space for ABC Corp, including custom furniture installations and high-tech AV systems.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 1 -->
+                <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel1">Commercial Office Fit-Out</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                        <div class="modal-body">
+                            <!-- Your modal body content, including images or text -->
+                            <div class="modal-images">
+                                <img src="images/Site1.jpeg" alt="Image 1">
+                                <img src="images/Site2.jpeg" alt="Image 2">
+                                <img src="images/Site3.jpeg" alt="Image 2">
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second project -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/Site2.jpeg" class="card-img-top" alt="Residential Smart Home">
+                        <div class="card-body">
+                            <h5 class="card-title">Residential Smart Home</h5>
+                            <p class="card-text">Installation of a comprehensive smart home system including security, automation, and entertainment solutions.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel2">Residential Smart Home</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="images/Site2.jpeg" class="img-fluid" alt="Residential Smart Home">
+                        <p>Installation of a comprehensive smart home system including security, automation, and entertainment solutions.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Third project -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/Site3.jpeg" class="card-img-top" alt="Industrial Equipment Setup">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Equipment Setup</h5>
+                            <p class="card-text">Installation and calibration of heavy machinery for a manufacturing plant, ensuring optimal performance and safety.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel3">Industrial Equipment Setup</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="images/Site3.jpeg" class="img-fluid" alt="Industrial Equipment Setup">
+                        <p>Installation and calibration of heavy machinery for a manufacturing plant, ensuring optimal performance and safety.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Ready to Transform Your Space?</h2>
+                    <p>Contact us to discuss your project and see how we can bring your vision to life.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Copyrights -->
+                <div class="col-md-6">
+                    <p>Tailor made website by Niël Slabbert</p>
+                </div>
+                <!-- Social Buttons -->
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="https://" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <!-- Tailor Made by Niël Slabbert -->
+
+                    <p class="mt-2">&copy;2024 Primo Installations. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function toggleTheme() {
+                document.body.classList.toggle('light-mode');
+                
+                // Update localStorage with the new theme preference
+                if (document.body.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+    
+            // Check local storage for theme preference on page load
+            if (localStorage.getItem('theme') === 'light') {
+                document.body.classList.add('light-mode');
+            } else {
+                document.body.classList.remove('light-mode');
+            }
+    
+            // Add event listener to the theme toggle button
+            document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        });
+    </script>
+</body>
+</html>
